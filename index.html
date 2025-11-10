@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="システム開発する会社 - モダンな技術でビジネス課題を解決">
+    <title>フロントエンドが得意なシステム開発会社 | コーポレートサイト</title>
+    
+    <!-- フォント読み込み（Google Fonts） -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- スタイルシート -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- ファビコン（オプション） -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💼</text></svg>">
+</head>
+<body>
+    <!-- ナビゲーションバー -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <!-- ロゴ -->
+                <div class="logo">
+                    <a href="#home">システム開発企業sample</a>
+                </div>
+                
+                <!-- ハンバーガーメニュー（モバイル用） -->
+                <button class="menu-toggle" id="menuToggle" aria-label="メニューを開く">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <!-- ナビゲーションメニュー -->
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link">ホーム</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">スキル</a></li>
+                    <li><a href="#projects" class="nav-link">実績</a></li>
+                    <li><a href="#contact" class="nav-link">お問い合わせ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ヒーローセクション（トップバナー） -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="gradient-overlay"></div>
+            <!-- アニメーション背景要素 -->
+            <div class="animated-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <!-- メインタイトル -->
+                <h1 class="hero-title">
+                    <span class="title-line">モダンな技術で</span>
+                    <span class="title-line highlight">ビジネス価値を創造</span>
+                </h1>
+                
+                <!-- サブタイトル -->
+                <p class="hero-subtitle">
+                    フロントエンドの確かな技術力によって、ユーザー体験とパフォーマンスを両立した<br>
+                    高品質なアプリケーションを開発している会社です
+                </p>
+                
+                <!-- CTAボタン -->
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">お問い合わせ</a>
+                    <a href="#projects" class="btn btn-secondary">実績を見る</a>
+                </div>
+                
+                <!-- スクロールインジケーター -->
+                <div class="scroll-indicator">
+                    <div class="mouse">
+                        <div class="wheel"></div>
+                    </div>
+                    <p class="scroll-text">Scroll</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Aboutセクション -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">About</span>
+                <h2 class="section-title">プロフェッショナルな開発者たち</h2>
+                <p class="section-description">
+                    5年以上の経験を持つフロントエンドエンジニア集団として、<br>
+                    モダンな技術スタックを用いて、スケーラブルで保守性の高いソリューションを提供します
+                </p>
+            </div>
+            
+            <div class="about-grid">
+                <!-- 左側：プロフィール画像と情報 -->
+                <div class="about-image-wrapper">
+                    <div class="about-image">
+                        <div class="image-placeholder">
+                            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="100" cy="100" r="80" fill="#e0e0e0"/>
+                                <circle cx="100" cy="80" r="30" fill="#999"/>
+                                <ellipse cx="100" cy="150" rx="50" ry="30" fill="#999"/>
+                            </svg>
+                        </div>
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+                
+                <!-- 右側：詳細情報 -->
+                <div class="about-content">
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="50">0</div>
+                            <div class="stat-label">プロジェクト完了</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="5">0</div>
+                            <div class="stat-label">年の経験</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="100">0</div>
+                            <div class="stat-label">% 顧客満足度</div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-text">
+                        <p>
+                            最新のフロントエンド技術を駆使し、ユーザー中心の設計思想に基づいた
+                            Webアプリケーション開発を専門としています。パフォーマンス最適化、
+                            アクセシビリティ、SEO対策など、多角的な視点から品質の高い
+                            プロダクトを提供しています。
+                        </p>
+                        <p>
+                            チーム開発での経験も豊富で、アジャイル開発手法やCI/CDパイプラインの
+                            構築、コードレビューなど、開発プロセス全体の改善にも取り組んでいます。
+                        </p>
+                    </div>
+                    
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">✓</div>
+                            <div class="feature-text">レスポンシブデザイン対応</div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">✓</div>
+                            <div class="feature-text">パフォーマンス最適化</div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">✓</div>
+                            <div class="feature-text">アクセシビリティ対応</div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">✓</div>
+                            <div class="feature-text">SEO対策</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- スキルセクション -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Skills</span>
+                <h2 class="section-title">技術スタック</h2>
+                <p class="section-description">
+                    モダンなフロントエンド技術から、バックエンド連携まで<br>
+                    幅広い技術領域に対応可能です
+                </p>
+            </div>
+            
+            <div class="skills-grid">
+                <!-- スキルカテゴリ：フロントエンド -->
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <h3 class="skill-category-title">Frontend</h3>
+                        <div class="skill-category-icon">🎨</div>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-meta">
+                                <div class="skill-name">React / Next.js</div>
+                                <div class="skill-percentage">95%</div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-meta">
+                                <div class="skill-name">Vue.js / Nuxt.js</div>
+                                <div class="skill-percentage">90%</div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-meta">
+                                <div class="skill-name">TypeScript</div>
+                                <div class="skill-percentage">92%</div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="92"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-meta">
+                                <div class="skill-name">HTML5 / CSS3</div>
+                                <div class="skill-percentage">98%</div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="98"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- スキルカテゴリ：スタイリング -->
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <h3 class="skill-category-title">Styling</h3>
+                        <div class="skill-category-icon">💅</div>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-meta">
+                                <div class="skill-name">Sass / SCSS</div>
+                                <div class="skill-percentage">95%</div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-meta">
+                                <div class="skill-name">Tailwind CSS</div>
+                                <div class="skill-percentage">88%</div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-meta">
+                                <div class="skill-name">CSS Modules</div>
+                                <div class="skill-percentage">90%</div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-meta">
+                                <div class="skill-name">Styled Components</div>
+                                <div class="skill-percentage">85%</div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- スキルカテゴリ：ツール・その他 -->
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <h3 class="skill-category-title">Tools & Others</h3>
+                        <div class="skill-category-icon">🛠️</div>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-meta">
+                                <div class="skill-name">Git / GitHub</div>
+                                <div class="skill-percentage">93%</div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="93"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-meta">
+                                <div class="skill-name">Webpack / Vite</div>
+                                <div class="skill-percentage">87%</div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="87"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-meta">
+                                <div class="skill-name">Jest / Testing Library</div>
+                                <div class="skill-percentage">80%</div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-meta">
+                                <div class="skill-name">Docker / CI/CD</div>
+                                <div class="skill-percentage">82%</div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="82"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 実績セクション -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Projects</span>
+                <h2 class="section-title">実績</h2>
+                <p class="section-description">
+                    私たちがこれまでに手がけたプロジェクトの一部をご紹介します<br>
+                    各プロジェクトで技術的な課題解決とビジネス価値の創出に貢献しました
+                </p>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- プロジェクトカード 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">
+                            <div class="project-tech-badge">React</div>
+                            <div class="project-tech-badge">TypeScript</div>
+                            <div class="project-tech-badge">Next.js</div>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" aria-label="プロジェクト詳細を見る">
+                                <span>詳細を見る</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Eコマースプラットフォーム</div>
+                        <h3 class="project-title">大規模ECサイトのリニューアル</h3>
+                        <p class="project-description">
+                            Next.jsとTypeScriptを使用したモダンなECサイトの構築。
+                            パフォーマンス最適化により、ページ読み込み速度を60%改善。
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Next.js</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">GraphQL</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- プロジェクトカード 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">
+                            <div class="project-tech-badge">Vue.js</div>
+                            <div class="project-tech-badge">Nuxt.js</div>
+                            <div class="project-tech-badge">PWA</div>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" aria-label="プロジェクト詳細を見る">
+                                <span>詳細を見る</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">SaaSアプリケーション</div>
+                        <h3 class="project-title">プロジェクト管理ツール</h3>
+                        <p class="project-description">
+                            Vue.jsとNuxt.jsで構築したPWA対応のプロジェクト管理ツール。
+                            オフライン機能とリアルタイム同期を実現。
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">Nuxt.js</span>
+                            <span class="tag">PWA</span>
+                            <span class="tag">Firebase</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- プロジェクトカード 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">
+                            <div class="project-tech-badge">React</div>
+                            <div class="project-tech-badge">Redux</div>
+                            <div class="project-tech-badge">WebSocket</div>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" aria-label="プロジェクト詳細を見る">
+                                <span>詳細を見る</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">リアルタイムアプリケーション</div>
+                        <h3 class="project-title">コラボレーションツール</h3>
+                        <p class="project-description">
+                            ReactとWebSocketを使用したリアルタイムコラボレーションツール。
+                            複数ユーザーの同時編集機能を実装。
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Redux</span>
+                            <span class="tag">WebSocket</span>
+                            <span class="tag">Node.js</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- プロジェクトカード 4 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">
+                            <div class="project-tech-badge">Angular</div>
+                            <div class="project-tech-badge">RxJS</div>
+                            <div class="project-tech-badge">Microservices</div>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" aria-label="プロジェクト詳細を見る">
+                                <span>詳細を見る</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">エンタープライズアプリ</div>
+                        <h3 class="project-title">企業向けダッシュボード</h3>
+                        <p class="project-description">
+                            AngularとRxJSを使用した大規模エンタープライズ向けダッシュボード。
+                            マイクロサービスアーキテクチャとの連携を実現。
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Angular</span>
+                            <span class="tag">RxJS</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">Microservices</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- お問い合わせセクション -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Contact</span>
+                <h2 class="section-title">お問い合わせ</h2>
+                <p class="section-description">
+                    プロジェクトのご相談やお仕事のご依頼など、<br>
+                    お気軽にお問い合わせください
+                </p>
+            </div>
+            
+            <div class="contact-wrapper">
+                <!-- 左側：連絡先情報 -->
+                <div class="contact-info">
+                    <div class="contact-info-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>example@example.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-icon">📱</div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p>06-1234-5678</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p>大阪府大阪市</p>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <a href="#" class="social-link" aria-label="GitHub">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- 右側：お問い合わせフォーム -->
+                <form class="contact-form" id="contactForm" action="contact.php" method="POST">
+                    <div class="form-group">
+                        <label for="name">お名前 <span class="required">*</span></label>
+                        <input type="text" id="name" name="name" required placeholder="山田 太郎">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">メールアドレス <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" required placeholder="example@email.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">件名 <span class="required">*</span></label>
+                        <input type="text" id="subject" name="subject" required placeholder="お問い合わせ件名">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">メッセージ <span class="required">*</span></label>
+                        <textarea id="message" name="message" rows="6" required placeholder="お問い合わせ内容をご記入ください"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <span>送信する</span>
+                        <svg class="btn-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4 10h12M10 4l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    
+                    <div class="form-message" id="formMessage"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 WEB開発の会社. All rights reserved.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">ホーム</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">スキル</a>
+                    <a href="#projects">実績</a>
+                    <a href="#contact">お問い合わせ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- トップに戻るボタン -->
+    <button class="scroll-to-top" id="scrollToTop" aria-label="トップに戻る">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 15l-6-6-6 6"/>
+        </svg>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
